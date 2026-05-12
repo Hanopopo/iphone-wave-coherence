@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleDevelopmentRegion</key>
+    <string>$(DEVELOPMENT_LANGUAGE)</string>
+    <key>CFBundleExecutable</key>
+    <string>$(EXECUTABLE_NAME)</string>
+    <key>CFBundleIdentifier</key>
+    <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    <key>CFBundleName</key>
+    <string>$(PRODUCT_NAME)</string>
+    <key>CFBundlePackageType</key>
+    <string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
+    <key>CFBundleShortVersionString</key>
+    <string>$(MARKETING_VERSION)</string>
+    <key>CFBundleVersion</key>
+    <string>$(CURRENT_PROJECT_VERSION)</string>
+    <key>LSRequiresIPhoneOS</key>
+    <true/>
+    <key>UIApplicationSceneManifest</key>
+    <dict>
+        <key>UIApplicationSupportsMultipleScenes</key>
+        <false/>
+    </dict>
+    <key>UILaunchScreen</key>
+    <dict/>
+    <key>UIRequiredDeviceCapabilities</key>
+    <array>
+        <string>arm64</string>
+    </array>
+    <key>UISupportedInterfaceOrientations</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+    </array>
+    <key>UIUserInterfaceStyle</key>
+    <string>Dark</string>
+    <key>UIBackgroundModes</key>
+    <array>
+        <string>audio</string>
+    </array>
+    <key>NSMotionUsageDescription</key>
+    <string>Wave Coherence reads the magnetometer, accelerometer, gyroscope, and barometer to visualize the electromagnetic and vibrational field around you.</string>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>Wave Coherence analyses ambient sound in real time to detect frequencies, harmonics, and resonance patterns.</string>
+    <key>NSCameraUsageDescription</key>
+    <string>Wave Coherence uses the camera and flash to measure your pulse via photoplethysmography (PPG) and derive heart rate variability for coherence training.</string>
+    <key>NSBluetoothAlwaysUsageDescription</key>
+    <string>Wave Coherence scans nearby Bluetooth devices to map the local radio-frequency field and can broadcast a low-power intention beacon.</string>
+    <key>NSBluetoothPeripheralUsageDescription</key>
+    <string>Wave Coherence broadcasts a low-power Bluetooth LE intention beacon when you activate the emitter.</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Wave Coherence uses the calibrated compass heading to orient the magnetic field readings.</string>
+</dict>
+</plist>

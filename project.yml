@@ -1,0 +1,60 @@
+name: WaveCoherence
+options:
+  bundleIdPrefix: com.devin.wavecoherence
+  deploymentTarget:
+    iOS: "16.0"
+  createIntermediateGroups: true
+  generateEmptyDirectories: true
+
+settings:
+  base:
+    DEVELOPMENT_TEAM: ""
+    CODE_SIGN_STYLE: Manual
+    CODE_SIGN_IDENTITY: ""
+    CODE_SIGNING_REQUIRED: NO
+    CODE_SIGNING_ALLOWED: NO
+    SWIFT_VERSION: "5.0"
+    IPHONEOS_DEPLOYMENT_TARGET: "16.0"
+    MARKETING_VERSION: "0.1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    ENABLE_BITCODE: NO
+    TARGETED_DEVICE_FAMILY: "1,2"
+    SUPPORTS_MACCATALYST: NO
+
+targets:
+  WaveCoherence:
+    type: application
+    platform: iOS
+    sources:
+      - path: WaveCoherence
+    info:
+      path: WaveCoherence/Info.plist
+      properties:
+        CFBundleDisplayName: Wave Coherence
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        UILaunchScreen:
+          UIColorName: ""
+          UIImageRespectsSafeAreaInsets: true
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        UIRequiredDeviceCapabilities:
+          - arm64
+        UIRequiresFullScreen: false
+        UIStatusBarHidden: false
+        UIViewControllerBasedStatusBarAppearance: true
+        UIBackgroundModes:
+          - audio
+        NSMotionUsageDescription: "Wave Coherence reads the magnetometer, accelerometer, gyroscope, and barometer to visualize the electromagnetic and vibrational field around you."
+        NSMicrophoneUsageDescription: "Wave Coherence analyses ambient sound in real time to detect frequencies, harmonics, and resonance patterns."
+        NSCameraUsageDescription: "Wave Coherence uses the camera and flash to measure your pulse via photoplethysmography (PPG) and derive heart rate variability for coherence training."
+        NSBluetoothAlwaysUsageDescription: "Wave Coherence scans nearby Bluetooth devices to map the local radio-frequency field and can broadcast a low-power intention beacon."
+        NSBluetoothPeripheralUsageDescription: "Wave Coherence broadcasts a low-power Bluetooth LE intention beacon when you activate the emitter."
+        NSLocationWhenInUseUsageDescription: "Wave Coherence uses the calibrated compass heading to orient the magnetic field readings."
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.devin.wavecoherence
+        PRODUCT_NAME: WaveCoherence
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ENABLE_PREVIEWS: YES
+        GENERATE_INFOPLIST_FILE: NO

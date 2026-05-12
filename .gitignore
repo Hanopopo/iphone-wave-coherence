@@ -1,0 +1,26 @@
+## Build outputs
+build/
+DerivedData/
+*.ipa
+Payload/
+
+## Xcode-generated
+*.xcodeproj
+xcuserdata/
+*.xcuserstate
+*.xcworkspace/
+
+## macOS / editor
+.DS_Store
+.idea/
+.vscode/
+
+## Swift Package Manager
+.swiftpm/
+.build/
+Packages/
+Package.resolved
+*.xcframework/
+
+## CocoaPods (not used, but ignored just in case)
+Pods/
